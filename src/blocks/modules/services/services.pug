@@ -1,0 +1,12 @@
+.services
+  .container
+    .services__wrap
+      .services__head
+        h1.services__title Услуги автосервиса
+        a(href="#") Все услуги
+      .wrapper
+        include ../../../blocks/components/service-card/service-card
+        +service-card("Диагностика автомобиля","14","diagnostic")
+        +service-card("Ремонт","8","repair")
+        +service-card("Техническое обслуживаение","14","tech")
+        +service-card("Шиномонтаж","16","wheel")

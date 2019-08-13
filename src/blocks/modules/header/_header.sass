@@ -1,0 +1,77 @@
+.header
+  &__content
+    display: flex
+    align-items: center
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      right: 0px
+      top: -8px
+      border-top: 80px solid $light-blue-base
+      border-left: 170px solid transparent
+      z-index: -1
+  &__top
+    padding: 24px 0
+  &__phone
+    margin-right: 64px
+  .phone
+    color: $text-black
+    font-weight: 600
+    font-size: 18px
+    &::before 
+      content: url("../../../img/header/phone.png")
+      position: absolute
+      left: -20px
+      top: 13px
+  .cabinet-link
+    margin-right: 24px
+    line-height: 18px
+    text-decoration: none
+    color: $text-black
+    border-bottom: 1px dashed $text-black
+  &__bottom
+    background: $gradient-black
+  &__nav
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 64px
+  &__list
+    display: flex
+    justify-content: center
+    font-weight: 600
+    font-size: 13px
+    line-height: 18px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+  &__item
+    height: 100%
+    position: relative
+    color: $white
+  &__link
+    padding: 24px 24px
+    color: $white
+    text-decoration: none
+    transition: 0.5s
+    &::after
+      content: "/"
+      position: absolute
+      right: -4px
+    &:hover
+      background-color: $yellow-primary
+      color: $text-black
+.flex-jc-sb
+  display: flex
+  justify-content: space-between
+.sale-icon
+  position: absolute
+  top: -32px
+  left: 37%
+  
+.logo
+    display: block
+    width: 100%
+    height: 56px
+    object-fit: cover
+    object-position: center

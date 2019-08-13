@@ -1,0 +1,8 @@
+mixin service-card(title, count, imgName)
+  .service-card
+    .service-card__img-wrap
+      img.service-card__img(src="../../../img/service-card/"+imgName+".jpg")
+    .service-card__title= title
+    .service-card__service-number
+      span.service-card__count= count
+      span.service-card__const услуг
