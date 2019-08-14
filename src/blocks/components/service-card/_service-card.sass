@@ -1,6 +1,11 @@
 .service-card
   width: calc(25% - 24px)
   margin: 12px
+  &:hover
+    .service-card__title
+      color: $blue-base
+  &__link
+    text-decoration: none
   &__img-wrap
   &__img
     width: 100%
@@ -15,6 +20,8 @@
     font-size: 18px
     line-height: 18px
     margin-bottom: 4px
+    transition: 0.3s
+    color: $text-black
   &__service-number  
     font-size: 14px;
     line-height: 16px;
